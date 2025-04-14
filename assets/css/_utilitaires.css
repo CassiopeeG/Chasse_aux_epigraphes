@@ -1,13 +1,14 @@
 /* Variables et utilitaires
    ========================================================================== */
 
-/****** Variables (peuvent être utilisées dans tous les fichiers) *******/
+/*** Variables ***/
 :root {
-    /** Variables À DÉFINIR 
-        JAUNE: #dba70d
-        GRIS TRANSPARENT: rgba(255, 255, 255, 0.25)
-        Valeur de border-radius des éléments :
-    */
+    --00: #000000;
+    --01: #5B9097;
+    --02: #8FBEB0;
+    --03: #E6ECEB;
+    --04: #F5DCAC;
+    --05: #F7B539;
 }
 
 /*** Clearfix ***/
