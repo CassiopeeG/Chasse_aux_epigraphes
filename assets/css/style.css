@@ -23,7 +23,6 @@
 
 
 /*test*/
-
 .conteneurTexte{
    display: flex;
    justify-content: center;
@@ -34,3 +33,65 @@
    outline: 2px solid var(--bleu); 
    outline-offset: -10px;
 }
+
+footer {
+   background-color: var(--beige);
+   padding: 2rem 1rem;
+   text-align: center;
+   border-top: 2px solid var(--bleu);
+   font-size: 0.95rem;
+ }
+
+ footer nav ul {
+   display: flex;
+   justify-content: center;
+   gap: 1.5rem;
+   list-style: none;
+   padding: 0;
+   margin: 0 0 1rem 0;
+   font-weight: bold;
+ }
+ 
+
+ footer ul {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   list-style: none;
+   padding: 0;
+   margin: 1rem 0;
+ }
+ 
+ footer ul li a {
+   text-decoration: none;
+   color: var(--noir);
+   font-weight: normal;
+ }
+ 
+
+ footer .icone {
+   display: inline-block;
+   width: 40px;
+   height: 40px;
+   background-color: var(--bleu);
+   border-radius: 50%;
+   margin-bottom: 0.25rem;
+ }
+ 
+
+ footer h3 {
+   font-weight: bold;
+   margin: 1rem 0;
+   font-size: 1rem;
+ }
+ 
+
+ footer p {
+   font-size: 0.8rem;
+   max-width: 800px;
+   margin: 0.3rem auto;
+   color: #333;
+ }
+ 
+
+ 
