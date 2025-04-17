@@ -3,12 +3,12 @@
 
 /*** Variables ***/
 :root {
-    --00: #000000;
-    --01: #5B9097;
-    --02: #8FBEB0;
-    --03: #E6ECEB;
-    --04: #F5DCAC;
-    --05: #F7B539;
+    --noir: #000000;
+    --bleu: #5B9097;
+    --bleuPale: #8FBEB0;
+    --gris: #E6ECEB;
+    --beige: #F5DCAC;
+    --or: #F7B539;
 }
 
 /*** Clearfix ***/

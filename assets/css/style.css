@@ -23,3 +23,14 @@
 
 
 /*test*/
+
+.conteneurTexte{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   background-color: var(--beige);
+   border: 2px solid var(--bleu); 
+   outline: 2px solid var(--bleu); 
+   outline-offset: -10px;
+}
