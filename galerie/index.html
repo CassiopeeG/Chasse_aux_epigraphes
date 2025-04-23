@@ -28,9 +28,55 @@
 
     <main>
 
-        <h1>Galerie des personnages</h1>
+        <h2>Galerie des personnages</h2>
 
-        
+        <div class="filtres">
+            <div class="filtres__indices">
+                <h2>Filtrer par type d’indice</h2>
+
+                <fieldset>
+                    <input type="radio" id="personnages" name="personnages" value="personnages">
+                    <label for="personnages"><h3>Personnages</h3></label>
+
+                    <input type="radio" id="objets" name="objets" value="objets">
+                    <label for="objets"><h3>Objets</h3></label>
+
+                    <input type="radio" id="lieux" name="lieux" value="lieux">
+                    <label for="lieux"><h3>Lieux</h3></label>
+                </fieldset>
+            </div>
+
+            <div class="filtres__activitées">
+                <h2>Filtrer par secteur d’activité</h2>
+
+                <fieldset>
+                    <input type="radio" id="sport_et_spectacles" name="sport_et_spectacles" value="sport_et_spectacles">
+                    <label for="sport_et_spectacles"><h3>Sport et spectacles</h3></label>
+
+                    <input type="radio" id="sciences_et_lettres" name="sciences_et_lettres" value="sciences_et_lettres">
+                    <label for="osciences_et_lettres"><h3>Sciences et lettres</h3></label>
+
+                    <input type="radio" id="economie_et_politique" name="economie_et_politique" value="economie_et_politique">
+                    <label for="economie_et_politique"><h3>Économie et politique</h3></label>
+
+                    <input type="radio" id="art_visuels" name="art_visuels" value="art_visuels">
+                    <label for="art_visuels"><h3>Arts visuels</h3></label>
+                </fieldset>
+            </div>
+        </div>
+
+        <object type="image/svg+xml" data="../assets/Objets_Svg/ligne.html"></object>
+
+        <div class="galerie">
+
+
+            <picture>
+                <source srcset= "//www.hautemontagne.ca/images/gravel_w600.jpg" media="(max-width:450px)">
+                <source srcset="//www.hautemontagne.ca/images/gravel_w2000.jpg" media="(min-width:401px)">
+                  <img class="picture__img" src="https://www.hautemontagne.ca/images/gravel_w2000.jpg">
+            </picture>
+
+        </div>
 
     </main>
 
