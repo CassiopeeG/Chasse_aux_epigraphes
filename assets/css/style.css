@@ -54,7 +54,7 @@ footer nav ul {
 footer ul {
   display: flex;
   justify-content: center;
-  gap: 1rem; /* Reduced from 2rem for less spacing */
+  gap: 1rem; 
   list-style: none;
   padding: 0;
   margin: 1rem 0;
