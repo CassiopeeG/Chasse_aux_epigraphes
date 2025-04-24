@@ -22,7 +22,8 @@
 @import "_typo.css";
 
 
-/*test*/
+/* Zones de texte beiges
+   ========================================================================== */
 .conteneurTexte{
    display: flex;
    justify-content: center;
@@ -33,6 +34,52 @@
    outline: 2px solid var(--bleu); 
    outline-offset: -10px;
 }
+
+/* Header
+   ========================================================================== */
+.banniere{
+  max-width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+
+@media (max-width: 600px) {
+  .logo{
+    width: 100%;
+    max-width: 200px;
+  
+    position: absolute;
+    top: 20px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .logo{
+    width: 100%;
+    max-width: 300px;
+  
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+}
+
+@media (min-width: 801px) {
+  .logo{
+    width: 100%;
+    max-width: 500px;
+  
+    position: absolute;
+    top: 50px;
+    right: 50px;
+  }
+}
+
+
+/* Footer 
+   ========================================================================== */
 footer {
   background-color: var(--beige);
   padding: 2rem 1rem;
