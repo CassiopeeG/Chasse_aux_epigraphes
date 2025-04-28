@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edmund Alleyn</title>
+    <script defer src="../js/epigraphes.js"></script>
+    <script defer src="../fiches/fiche.js"></script>
+</head>
+<body>
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+            historiques :
+            <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
+
+    <header>
+        <p>ici mettre la bannière</p>
+    </header>
+
+    <main>
+        <h1><span id="prenom">Edmund</span><span id="nom">Alleyn</span></h1>
+
+        <h2>Économie et politique</h2>
+
+        <figure>
+            <img src="../assets/images/ImgGalerie/table/e0022.png" alt="Maurice Pollack" id="url_image">
+            <figcaption>
+                <span id="titre_image">Maurice Pollack</span> 
+                <br> ©
+                <span id="credit_image">Photo Fondation Maurice Pollack</span>
+            </figcaption>
+        </figure>
+
+        <h2>Notes biographiques</h2>
+        <div id="notes_biographiques">
+            <p>
+                Maurice Polack est né en Russie en 1885. Il a profondément marqué l’histoire économique de la ville de Québec. 
+                Maurice Polack s’est établi au Québec en 1902 et ouvre en 1906 un magasin sur la rue Saint-Joseph. Il y innove 
+                en proposant des vêtements à prix fixe. Durant la crise des années 30, il est atteint par la vague antisémite 
+                alors que l’Église catholique lance une campagne de boycott contre son magasin proclamant que ses bénéfices 
+                servent aux communistes pour combattre le christianisme. Il passe à travers cette épreuve et en 1950, il bâtit 
+                un grand magasin au style moderne sur la rue Saint-Joseph avec au sous-sol, un premier magasin d’alimentation 
+                grande surface, l’épicerie Steingberg. En face, il fait construire un stationnement de 150 voitures avec rampes 
+                circulaires. Une fois sa fortune établie en 1955, il lance une fondation qui finance plusieurs projets à Québec, 
+                au Musée des Beaux arts, à l’hôpital Jeffrey Hale ou l’Université Laval où un pavillon porte aujourd’hui son nom.
+            </p>
+        </div>
+
+        <section>
+            <h2>Épigraphe</h2>
+            <figure>
+                <img src="../assets/images/epigraphes/epigraphe_e0001.png" alt="Épigraphe de Edmund Alleyn" id="url_plaque">
+                <figcaption id="transcript">Ici vécut Edmund Alleyn(1931-2004). Peintre et artiste polyvalent, créateur
+                    d'une oeuvre originale et en constante mutation.
+                </figcaption>
+            </figure>
+        </section>
+
+
+        <h2>Localisation</h2>
+        <figure>
+            <img src="../assets/images/imgGoogleMap/e0022-zoom-google-maps.png" alt="Plan rapproché de l'emplacement sur la carte géographique"
+                id="carteZoom">
+            <figcaption>
+                <h3>Arrondissement:
+                    <span id="arrondissement">La Cité-Limoilou</span>
+                </h3>
+                <h3>Quartier:
+                    <span id="quartier">Saint-Jean-Baptiste</span>
+                </h3>
+                <h3>Adresse:
+                    <span id="adresse">1, Grande Allée Est</span>
+                </h3>
+            </figcaption>
+        </figure>
+
+        <h2>Capsule sonore</h2>
+        <audio controls id="audio_url">
+            <source src="http://www.ville.quebec.qc.ca/sons/epigraphes/epigraphes_pollack.mp3" type="audio/mpeg"/>
+                Votre navigateur ne propose pas de lecteur audio.
+                Consultez la transcription textuelle qui suit.
+        </audio>
+        <h3>Transcription textuelle</h3>
+        <p id="audio_preambule">
+            Maurice Pollack s’illustre dans le domaine du commerce. L’histoire à succès de ce membre éminent de la 
+            communauté juive de Québec révèle cependant un aspect moins connu de notre passé : celui de la vague 
+            d’antisémitisme qui a touché la ville durant les années 1930.
+        </p>
+        <p id="audio_transcription">
+            Les gens de Québec se souviennent de Maurice Pollack (...) Proin gravida dolor sit amet lacus accumsan et 
+            viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient 
+            montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, 
+            sed Nam fermentum, nulla luctus pharetra vulputate, amet lacus accumsan et viverra justo commodo leda.
+        </p>
+        <p id="audio_credit">
+            Jennifer Alleyn est cinéaste. Elle s’investit dans la transmission de
+            l’œuvre de son père, entre autres par la publication d’un site Internet et la réalisation de
+            documentaires.
+        </p>
+    </main>
+    
+    <aside role="complementary">
+        <!-- Si l’utilisateur n’a pas débuté une chasse -->
+        <div id="zoneAucuneChasseEnCours">
+            <h2>Soumettre cette fiche comme élément trouvé</h2>
+            <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
+                    href="../chasse/index.html">Chasse</a>.</span></p>
+        </div>
+
+        <!-- Si une chasse est en cours -->
+        <div id="zoneChasseEnCours" hidden>
+            <form>
+                <fieldset>
+                    <legend>
+                        <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
+                    </legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
+                                required>
+                            <label for="personnage">Personnage</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
+                            <label for="lieu">Lieu</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
+                            <label for="objet">Objet</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p id="message"></p>
+                <p>
+                    <button id="btnSoumettre">Soumettre</button>
+                </p>
+            </form>
+            <ul>
+                <li>
+                    <a href="../chasse/index.html">Vérifier votre progression de la chasse</a>
+                </li>
+                <li>
+                    <a href="../carte/index.html">Poursuivre la chasse </a>
+                </li>
+            </ul>
+        </div>
+    </aside>
+
+</body>
+</html>
