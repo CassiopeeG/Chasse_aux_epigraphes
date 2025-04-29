@@ -21,6 +21,13 @@
    ========================================================================== */
 @import "_typo.css";
 
+/* Centrer le contenu
+   ========================================================================== */
+.body{
+  width: 800px;
+  margin: auto;
+  background-color: blue;
+}
 
 /* Zones de texte beiges
    ========================================================================== */
@@ -33,6 +40,7 @@
    border: 2px solid var(--bleu); 
    outline: 2px solid var(--bleu); 
    outline-offset: -10px;
+   padding: 2%;
 }
 
 /* Header
@@ -76,7 +84,6 @@
     right: 50px;
   }
 }
-
 
 /* Footer 
    ========================================================================== */
@@ -141,3 +148,66 @@ footer p {
   margin: 0.3rem auto;
   color: #333;
 }
+
+/* Image Épigraphe
+   ========================================================================== */
+.img_epigraphe{
+  width: 50%;
+}
+
+
+
+
+.conteneurFlex_2_sections {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.itemFlex_1 {
+  display: block;
+  flex-grow: 1;
+}
+
+.itemFlex_2 {
+  display: block;
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+/* mobile */
+/* .conteneurFlex{
+  display: grid;
+  grid-template-columns: 1fr;
+} */
+
+
+/* table */
+/* .conteneurFlex{
+  padding: 0 120px 0 120px;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  grid-template-areas: 
+  "A B";
+}
+
+.A{
+  grid-area: A;
+}
+
+.B{
+  grid-area: B;
+} */
+
+  /* margin: 120px; */
+/* padding: 0rem 1rem 0rem 1rem; */
+/* grid-template-rows: repeat(6, auto); */

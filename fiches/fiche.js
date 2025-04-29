@@ -10,14 +10,14 @@ function initialiser(id){
     let nom = objJSONepigraphes[id].NOM
     let nomComplet = prenom + " " + nom
 
+    //Title
+    document.querySelector("title").innerHTML = nomComplet
+
     //Prenom
     document.getElementById("prenom").innerHTML = prenom + " "
 
     //Nom
     document.getElementById("nom").innerHTML = nom
-
-    //Domaine
-    document.getElementById("domaine").innerHTML = objJSONepigraphes[id].DOMAINE
 
     //Domaine
     document.getElementById("domaine").innerHTML = objJSONepigraphes[id].DOMAINE
