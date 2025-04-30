@@ -13,11 +13,8 @@ function initialiser(id){
     //Title
     document.querySelector("title").innerHTML = nomComplet
 
-    //Prenom
-    document.getElementById("prenom").innerHTML = prenom + " "
-
-    //Nom
-    document.getElementById("nom").innerHTML = nom
+    //Nom et Prénom
+    document.getElementById("nomComplet").innerHTML = nomComplet
 
     //Domaine
     document.getElementById("domaine").innerHTML = objJSONepigraphes[id].DOMAINE

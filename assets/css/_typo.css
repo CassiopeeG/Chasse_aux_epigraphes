@@ -41,7 +41,7 @@ h3,
 .h3,
 h4,
 .h4 {
-    font-weight: 700;
+    font-weight: 500;
     font-family: Inknut Antiqua, serif;
 }
 
@@ -97,8 +97,8 @@ h2,
 }
 @media (min-width: 800px) {
     h2,
-    .h2 { /* = 20px */
-        font-size: 2rem;
+    .h2 { /* = 30px */
+        font-size: 3rem;
     }
 }
 
@@ -114,7 +114,7 @@ h3,
 }
 @media (min-width: 800px) {
     h3,
-    .h3 { /* = 25px */
-        font-size: 2.5rem;
+    .h3 { /* = 20px */
+        font-size: 2rem;
     }
 }
