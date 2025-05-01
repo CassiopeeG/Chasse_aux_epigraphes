@@ -201,3 +201,34 @@ footer p {
   /* margin: 120px; */
 /* padding: 0rem 1rem 0rem 1rem; */
 /* grid-template-rows: repeat(6, auto); */
+
+/* Gallerie perso */
+
+.galerie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem; 
+  padding: 2rem;
+}
+
+.img_fiche {
+  flex: 1 1 200px; 
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.img_fiche:hover {
+}
+
+.img_fiche img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
