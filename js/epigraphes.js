@@ -108,6 +108,7 @@ const objJSONepigraphes = {
           "TITRE": "Maison Kerhulu, entre 1939 et 1945",
           "CREDIT": "Agathe Chiasson-Leblanc"
       },
+      "DOMAINE": "Sciences et Lettres",
       "CHASSE": {
           "CATEGORIE": "lieu",
           "INDICE": " à la maison Kerhulu.",
