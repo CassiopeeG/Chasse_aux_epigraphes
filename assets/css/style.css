@@ -25,17 +25,16 @@
    ========================================================================== */
 body{
   max-width: 1200px;
-  margin: 120px auto;
+  margin: 0 auto;
   background-color: var(--bleu)
 }
 
 /* Header
    ========================================================================== */
 .banniere{
-  max-width: 100%;
-  position: relative;
-  top: 0px;
-  left: 0px;
+  width: 100vh;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 600px) {
@@ -141,7 +140,7 @@ footer p {
   width: 50%;
 }
 
-/* TEST FLEX
+/* Flex
    ========================================================================== */
 .conteneurFlex_2_sections {
   flex-wrap: wrap;
@@ -169,41 +168,20 @@ footer p {
     padding: 1rem 2rem 1rem 2rem;
  }
 
+ /* Zones de contenu turquoise
+   ========================================================================== */
+.zoneTurquoise{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-
-
-/* mobile */
-/* .conteneurFlex{
-  display: grid;
-  grid-template-columns: 1fr;
-} */
-
-
-/* table */
-/* .conteneurFlex{
-  padding: 0 120px 0 120px;
-
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-  grid-template-areas: 
-  "A B";
+  background-color: var(--bleuPale);
+  padding: 4rem;
+  margin: 2rem 0 2rem 0 ;
 }
 
-.A{
-  grid-area: A;
-}
-
-.B{
-  grid-area: B;
-} */
-
-  /* margin: 120px; */
-/* padding: 0rem 1rem 0rem 1rem; */
-/* grid-template-rows: repeat(6, auto); */
-
-/* Gallerie perso */
-
+ /* Galerie et fiche
+   ========================================================================== */
 .galerie {
   display: flex;
   flex-wrap: wrap;
