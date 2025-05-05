@@ -18,6 +18,10 @@
     clear: both;
 }
 
+img{
+    max-width: 100%;
+}
+
 /*** Harmoniser le modèle de boîte avec Box-Sizing ***/
 html {
     box-sizing: border-box;

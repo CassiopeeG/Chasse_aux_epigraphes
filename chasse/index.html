@@ -2,8 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chasse</title>
+    <title>Accueil</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.png">
 </head>
 
 <body>
@@ -14,9 +15,8 @@
 
     <main>
         <h1>Chasse aux Épigraphes</h1>
-
-
-        <div>
+            
+        <div class="conteneurTexte">
             <h3>La chasse est composée de 12 épigraphes qui ont été sélectionnées pour leur intérêt historique ou anecdotique.</h3>
             <ul>
                 <li>Pigez l’une des 64 combinaisons possibles.</li>
@@ -25,30 +25,37 @@
             </ul>
         </div>
 
-        <object type="image/svg+xml" data="../assets/Objets_Svg/boutons/btnPigerChasse.html"></object>
+        <div class="zoneTurquoise zoneChasse">
 
-        <div class= "zone_chasse">
-            <h3>Zone de texte pour la phrase d’indice. Lorem ipsum dolor sit amet, consectetur.  </h3>
+        <img src="../assets/svg/boutons/piger_chasse.svg" alt="Piger une chasse">
 
+        <div class="zoneBleu">
+            <div class="conteneurTexte">
+                <h3>Zone de texte pour la phrase d’indice. Lorem ipsum dolor sit amet, consectetur.  </h3>
+            </div>
+            
             <ul>
-                <li>Personnage</li>
+                <li>
+                    <div class="conteneurTexte">
+                        <img src="../assets/svg/icones/icones_chasse/Icone_Personnage.svg" alt="Personnage">
+                        <h3>Personnage</h3>
+                    </div>
+                </li>
+
                 <li>Objet</li>
                 <li>Lieu</li>
             </ul>
-
             <ul>
                 <li>
                     <p>Phrase pour l’indice lorem ipsum</p>
                     <span class="retroaction_chasse"></span>
                     <h3>Nom du personnage</h3>
                 </li>
-
                 <li>
                     <p>Phrase pour l’indice lorem ipsum</p>
                     <span class="retroaction_chasse"></span>
                     <h3>Nom de l'objet</h3>
                 </li>
-
                 <li>
                     <p>Phrase pour l’indice lorem ipsum</p>
                     <span class="retroaction_chasse"></span>
@@ -73,6 +80,8 @@
                     </li>
                 </ul>
             </div>
+        </div>
+            
         </div>
 
 
