@@ -10,7 +10,36 @@
 <body>
     
     <header>
+        <div class="banniere">
+            <picture >
+                <!-- Table -->
+                <source 
+                media = "(max-width: 320px)"
+                srcset= "../assets/images/banniere/banniere-mobile.png">
+                <!-- Tablette -->
+                <source 
+                media = "(max-width: 750px)"
+                srcset= "../assets/images/banniere/banniere-tablette.png">
+                <!-- Mobile -->
+                <source 
+                media = "(min-width: 751px)"
+                srcset= "../assets/images/banniere/banniere-desktop.png">
 
+                <img src="../assets/images/banniere/banniere-mobile.png" alt="">
+            </picture>
+        </div>
+        
+        <h1 class="screen-reader-only">Chasse aux Épigraphes</h1>
+        <h2 class="screen-reader-only">dans la ville de Québec</h2>
+
+        <nav>
+            <ul>
+                <li><h2><a href="#">Accueil</a></h2></li>
+                <li><h2><a href="../chasse/index.html">Chasse aux épigraphes</a></h2></li>
+                <li><h2><a href="../galerie/index.html">Galerie de personnages</a></h2></li>
+                <li><h2><a href="../carte/index.html">Carte</a></h2></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -25,7 +54,7 @@
             </ul>
         </div>
 
-        <div class="zoneTurquoise zoneChasse">
+        <div class="zoneTurquoise">
 
         <img src="../assets/svg/boutons/piger_chasse.svg" alt="Piger une chasse">
 
@@ -34,36 +63,42 @@
                 <h3>Zone de texte pour la phrase d’indice. Lorem ipsum dolor sit amet, consectetur.  </h3>
             </div>
             
-            <ul>
-                <li>
-                    <div class="conteneurTexte">
+            <ul class="zoneIconeChasse">
+                <li class="conteneurTexte iconeChasse">
                         <img src="../assets/svg/icones/icones_chasse/Icone_Personnage.svg" alt="Personnage">
                         <h3>Personnage</h3>
-                    </div>
                 </li>
 
-                <li>Objet</li>
-                <li>Lieu</li>
-            </ul>
-            <ul>
-                <li>
+                <li class="conteneurTexte iconeChasse">
+                        <img src="../assets/svg/icones/icones_chasse/Icone Objet.svg" alt="Personnage">
+                        <h3>Objet</h3>
+                </li>
+
+                <li class="conteneurTexte iconeChasse">
+                        <img src="../assets/svg/icones/icones_chasse/Icone Lieu.svg" alt="Personnage">
+                        <h3>Lieu</h3>
+                </li>
+
+                <li class="conteneurTexte iconeChasse">
                     <p>Phrase pour l’indice lorem ipsum</p>
                     <span class="retroaction_chasse"></span>
                     <h3>Nom du personnage</h3>
                 </li>
-                <li>
+
+                <li class="conteneurTexte iconeChasse">
                     <p>Phrase pour l’indice lorem ipsum</p>
                     <span class="retroaction_chasse"></span>
                     <h3>Nom de l'objet</h3>
                 </li>
-                <li>
+
+                <li class="conteneurTexte iconeChasse">
                     <p>Phrase pour l’indice lorem ipsum</p>
                     <span class="retroaction_chasse"></span>
                     <h3>Nom du lieu</h3>
                 </li>
             </ul>
 
-            <div>
+            <div class="conteneurTexte">
                 <ul>
                     <li>
                         Activez le bouton pour piger une nouvelle chasse
@@ -83,11 +118,57 @@
         </div>
             
         </div>
-
-
     </main>
 
     <footer>
-        
+        <nav>
+            <ul>
+                <li><h2><a href="#">Accueil</a></h2></li>
+                <li><h2><a href="../chasse/index.html">Chasse aux épigraphes</a></h2></li>
+                <li><h2><a href="../galerie/index.html">Galerie de personnages</a></h2></li>
+                <li><h2><a href="../carte/index.html">Carte</a></h2></li>
+            </ul>
+        </nav>
+        <img src="../assets/svg/separateur.svg" alt="">
+        <ul>
+            <li>
+                <span>
+                    <span class="screen-reader-only">Instagram :</span>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/svg/icones/Icones_footer/iconeInstagram.svg" alt="Icone Instagram" class="social-icon">
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <span class="screen-reader-only">X :</span>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="../assets/svg/icones/Icones_footer/iconeX.svg" alt="Icone X" class="social-icon">
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <span class="screen-reader-only">Youtube :</span>
+                    <a href="http://www.youtube.com" target="_blank">
+                        <img src="../assets/svg/icones/Icones_footer/iconeYoutube.svg" alt="Icone Youtube" class="social-icon">
+                    </a>
+                </span>
+            </li>
+            <li>
+                <span>
+                    <span class="screen-reader-only">Facebook :</span>
+                    <a href="http://www.facebook.com" target="_blank">
+                        <img src="../assets/svg/icones/Icones_footer/iconeFacebook.svg" alt="Icone Youtube" class="social-icon">
+                    </a>
+                </span>
+            </li>
+        </ul>
+    
+        <h3>Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823</h3>
+        <p>Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données «Épigraphes historiques» sous licence CC BY. Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la «Chasse aux épigraphes».</p>
+        <img src="../assets/svg/separateur.svg" alt="">
+        <p>Une réalisation de Cassiopée Gariépy et Ewan Bernard © Tous droits réservés 2025.</p>
+        <p>Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
     </footer>
 </body>

@@ -163,10 +163,8 @@ footer p {
 /* Zones de texte beiges
    ========================================================================== */
    .conteneurTexte{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
     background-color: var(--beige);
     outline: 2px solid var(--bleu); 
     outline-offset: -10px;
@@ -178,36 +176,61 @@ footer p {
 .zoneTurquoise{
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
 
   background-color: var(--bleuPale);
-  padding: 4rem;
+  padding: 2rem;
   margin: 2rem 0 2rem 0 ;
 }
 
 .zoneBleu{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  flex-wrap: wrap;
-
   background-color: var(--bleu);
-  padding: 4rem;
+  padding: 1.5rem;
   margin: 2rem 0 2rem 0 ;
 }
 
 /* Chasse
    ========================================================================== */
-   
-.zoneChasse{
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  flex-wrap: wrap;
+   .zoneIconeChasse{
+    list-style-type: none;
+    padding: 0;
 }
-  
+
+@media(min-width: 361px){
+  .zoneIconeChasse{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media(min-width: 751px){
+  .zoneIconeChasse{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+.iconeChasse{
+  text-align: center;
+  padding: 3rem 0 1rem 0;
+  margin-bottom: 1.5rem;
+}
+
+@media(min-width: 361px){
+  .iconeChasse{
+    text-align: center;
+    padding: 3rem 0 0 0;
+  }
+}
 
  /* Galerie et fiche
    ========================================================================== */
