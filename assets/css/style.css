@@ -34,44 +34,40 @@ main{
   padding: 2rem;
 }
 
-/* Header
+/* Flex
    ========================================================================== */
-.banniere{
-  height: auto;
-  object-fit: cover;
+   .flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+/* Zones de texte beiges
+   ========================================================================== */
+   .conteneurTexte{
+    background-color: var(--beige);
+    outline: 2px solid var(--bleu); 
+    outline-offset: -10px;
+    padding: 1rem 2rem 1rem 2rem;
+ }
+
+ /* Zones de contenu turquoise et bleu
+   ========================================================================== */
+.zoneTurquoise{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  background-color: var(--bleuPale);
+  padding: 2rem;
+  margin: 2rem 0 2rem 0 ;
 }
 
-@media (max-width: 600px) {
-  .logo{
-    width: 100%;
-    max-width: 200px;
-  
-    position: absolute;
-    top: 20px;
-    right: 50px;
-  }
-}
-
-@media (max-width: 800px) {
-  .logo{
-    width: 100%;
-    max-width: 300px;
-  
-    position: absolute;
-    top: 50px;
-    right: 50px;
-  }
-}
-
-@media (min-width: 801px) {
-  .logo{
-    width: 100%;
-    max-width: 500px;
-  
-    position: absolute;
-    top: 50px;
-    right: 50px;
-  }
+.zoneBleu{
+  background-color: var(--bleu);
+  padding: 1.5rem;
+  margin: 2rem 0 2rem 0 ;
 }
 
 /* Footer 
@@ -142,51 +138,29 @@ footer p {
 /* Image Épigraphe
    ========================================================================== */
 .img_epigraphe{
-  width: 50%;
+  width: 60%;
+  margin: 0 auto;
+
+  border-radius: 50%;
+  background-color: var(--bleu);
+  outline: var(--bleu) solid 3rem;
+  outline-offset: -10px;
 }
 
-/* Flex
+/* Fiche
    ========================================================================== */
-.conteneurFlex_2_sections {
+.flex_fiche {
+  display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-@media(min-width: 600px){
-  .conteneurFlex_2_sections {
+@media(min-width: 750px){
+  .flex_fiche {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+
   }
-}
-
-
-/* Zones de texte beiges
-   ========================================================================== */
-   .conteneurTexte{
-    align-items: center;
-
-    background-color: var(--beige);
-    outline: 2px solid var(--bleu); 
-    outline-offset: -10px;
-    padding: 1rem 2rem 1rem 2rem;
- }
-
- /* Zones de contenu turquoise et bleu
-   ========================================================================== */
-.zoneTurquoise{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  background-color: var(--bleuPale);
-  padding: 2rem;
-  margin: 2rem 0 2rem 0 ;
-}
-
-.zoneBleu{
-  background-color: var(--bleu);
-  padding: 1.5rem;
-  margin: 2rem 0 2rem 0 ;
 }
 
 /* Chasse
@@ -262,4 +236,23 @@ figcaption {
   margin-top: 0.5rem;
   font-size: 1rem;
   color: #333;
+}
+
+/* Boutons
+   ========================================================================== */
+
+.bouton_jouer_chasse{
+  width: 473px;
+  height: 145px;
+  background-size: cover;
+  background-image: url(../svg/boutons/jouer_chasse.svg);
+}
+
+.bouton_jouer_chasse:hover{
+  background-image: url(../svg/boutons/jouer_chasse_hover.svg);
+}
+
+.bouton_jouer_chasse:active{
+  background-image: url(../svg/boutons/jouer_chasse_click.svg);
+
 }
