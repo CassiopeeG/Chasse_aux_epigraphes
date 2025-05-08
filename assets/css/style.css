@@ -238,6 +238,12 @@ figcaption {
   color: #333;
 }
 
+.img_fiche .conteneurTexte {
+  padding: 0.5rem 1rem; 
+  max-width: 200px; 
+}
+
+
 /* Boutons
    ========================================================================== */
 
@@ -255,4 +261,45 @@ figcaption {
 .bouton_jouer_chasse:active{
   background-image: url(../svg/boutons/jouer_chasse_click.svg);
 
+}
+
+
+/* filtres */
+.filtres {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: var(--beige);
+  outline: 2px solid var(--bleu);
+  outline-offset: -10px;
+}
+
+.filtres__indices, .filtres__activitées {
+  flex: 1;
+  padding: 1rem;
+}
+
+.filtres h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+input[type="radio"] {
+  margin-right: 0.5rem;
+}
+
+label {
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
 }
