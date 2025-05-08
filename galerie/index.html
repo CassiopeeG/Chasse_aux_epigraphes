@@ -9,19 +9,19 @@
 <body>
     <header>
         <div class="banniere">
-            <picture >
+            <picture>
                 <!-- Table -->
                 <source 
-                media = "(max-width: 320px)"
-                srcset= "../assets/images/banniere/banniere-mobile.png">
+                media="(max-width: 320px)"
+                srcset="../assets/images/banniere/banniere-mobile.png">
                 <!-- Tablette -->
                 <source 
-                media = "(max-width: 750px)"
-                srcset= "../assets/images/banniere/banniere-tablette.png">
+                media="(max-width: 750px)"
+                srcset="../assets/images/banniere/banniere-tablette.png">
                 <!-- Mobile -->
                 <source 
-                media = "(min-width: 751px)"
-                srcset= "../assets/images/banniere/banniere-desktop.png">
+                media="(min-width: 751px)"
+                srcset="../assets/images/banniere/banniere-desktop.png">
 
                 <img src="../assets/images/banniere/banniere-mobile.png" alt="">
             </picture>
@@ -41,39 +41,36 @@
     </header>
 
     <main>
-
         <h2>Galerie des personnages</h2>
 
         <div class="filtres">
             <div class="filtres__indices">
                 <h2>Filtrer par type d’indice</h2>
-
                 <fieldset>
-                    <input type="radio" id="personnages" name="personnages" value="personnages">
+                    <input type="radio" id="personnages" name="type_indice" value="personnages">
                     <label for="personnages"><h3>Personnages</h3></label>
 
-                    <input type="radio" id="objets" name="objets" value="objets">
+                    <input type="radio" id="objets" name="type_indice" value="objets">
                     <label for="objets"><h3>Objets</h3></label>
 
-                    <input type="radio" id="lieux" name="lieux" value="lieux">
+                    <input type="radio" id="lieux" name="type_indice" value="lieux">
                     <label for="lieux"><h3>Lieux</h3></label>
                 </fieldset>
             </div>
 
             <div class="filtres__activitées">
                 <h2>Filtrer par secteur d’activité</h2>
-
                 <fieldset>
-                    <input type="radio" id="sport_et_spectacles" name="sport_et_spectacles" value="sport_et_spectacles">
+                    <input type="radio" id="sport_et_spectacles" name="secteur_activite" value="sport_et_spectacles">
                     <label for="sport_et_spectacles"><h3>Sport et spectacles</h3></label>
 
-                    <input type="radio" id="sciences_et_lettres" name="sciences_et_lettres" value="sciences_et_lettres">
-                    <label for="osciences_et_lettres"><h3>Sciences et lettres</h3></label>
+                    <input type="radio" id="sciences_et_lettres" name="secteur_activite" value="sciences_et_lettres">
+                    <label for="sciences_et_lettres"><h3>Sciences et lettres</h3></label>
 
-                    <input type="radio" id="economie_et_politique" name="economie_et_politique" value="economie_et_politique">
+                    <input type="radio" id="economie_et_politique" name="secteur_activite" value="economie_et_politique">
                     <label for="economie_et_politique"><h3>Économie et politique</h3></label>
 
-                    <input type="radio" id="art_visuels" name="art_visuels" value="art_visuels">
+                    <input type="radio" id="art_visuels" name="secteur_activite" value="art_visuels">
                     <label for="art_visuels"><h3>Arts visuels</h3></label>
                 </fieldset>
             </div>
@@ -82,309 +79,307 @@
         <object type="image/svg+xml" data="../assets/Objets_Svg/ligne.html"></object>
 
         <div class="galerie">
-
             <!-- 01. Edmund_Alleyn -->
-         <a href="../fiches/fiche.html?id=e0001">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0001.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0001.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0001.png">
-                    
-                    <img src="../assets/images/ImgGalerie/table/e0001.png" alt="Fiche Edmund Alleyn">
-                </picture>
-                <figcaption>Consulter la fiche de Edmund Alleyn</figcaption>
-            </figure>
-         </a>
+            <a href="../fiches/fiche.html?id=e0001">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0001.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0001.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0001.png">
+                        
+                        <img src="../assets/images/ImgGalerie/table/e0001.png" alt="Fiche Edmund Alleyn">
+                    </picture>
+                    <figcaption>Consulter la fiche de Edmund Alleyn</figcaption>
+                </figure>
+            </a>
 
-        <!-- 02. Philippe-Joseph Aubert de Gaspé -->
-         <a href="../fiches/fiche.html?id=e0002">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0002.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0002.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0002.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0002.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Philippe-Joseph Aubert de Gaspé</figcaption>
-            </figure>
-         </a>
+            <!-- 02. Philippe-Joseph Aubert de Gaspé -->
+            <a href="../fiches/fiche.html?id=e0002">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0002.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0002.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0002.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0002.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
+                    </picture>
+                    <figcaption>Consulter la fiche de Philippe-Joseph Aubert de Gaspé</figcaption>
+                </figure>
+            </a>
 
-         <!-- 03. Henriette Belley -->
-         <a href="../fiches/fiche.html?id=e0004">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0004.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0004.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0004.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0004.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Henriette Belley</figcaption>
-            </figure>
-         </a>        
+            <!-- 03. Henriette Belley -->
+            <a href="../fiches/fiche.html?id=e0004">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0004.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0004.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0004.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0004.png" alt="Fiche Henriette Belley">
+                    </picture>
+                    <figcaption>Consulter la fiche de Henriette Belley</figcaption>
+                </figure>
+            </a>        
 
-         <!-- 04. Robert Blatter -->
-         <a href="../fiches/fiche.html?id=e0005">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0005.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0005.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0005.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0005.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Robert Blatter</figcaption>
-            </figure>
-         </a>  
+            <!-- 04. Robert Blatter -->
+            <a href="../fiches/fiche.html?id=e0005">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0005.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0005.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0005.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0005.png" alt="Fiche Robert Blatter">
+                    </picture>
+                    <figcaption>Consulter la fiche de Robert Blatter</figcaption>
+                </figure>
+            </a>  
 
-         <!-- 05. Joseph Knight Boswell -->
-         <a href="../fiches/fiche.html?id=e0007">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0007.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0007.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0007.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0007.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Joseph Knight Boswell</figcaption>
-            </figure>
-         </a>          
+            <!-- 05. Joseph Knight Boswell -->
+            <a href="../fiches/fiche.html?id=e0007">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0007.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0007.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0007.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile漂mobile/e0007.png" alt="Fiche Joseph Knight Boswell">
+                    </picture>
+                    <figcaption>Consulter la fiche de Joseph Knight Boswell</figcaption>
+                </figure>
+            </a>          
 
-         <!-- 06. Marthe Caillaud-Simard -->
-         <a href="../fiches/fiche.html?id=e0008">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0008.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0008.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0008.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0008.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Marthe Caillaud-Simard</figcaption>
-            </figure>
-         </a>                 
+            <!-- 06. Marthe Caillaud-Simard -->
+            <a href="../fiches/fiche.html?id=e0008">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0008.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0008.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0008.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0008.png" alt="Fiche Marthe Caillaud-Simard">
+                    </picture>
+                    <figcaption>Consulter la fiche de Marthe Caillaud-Simard</figcaption>
+                </figure>
+            </a>                 
 
-         <!-- 07. Johnny Farago -->
-         <a href="../fiches/fiche.html?id=e0012">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0012.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0012.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0012.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0012.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Johnny Farago</figcaption>
+            <!-- 07. Johnny Farago -->
+            <a href="../fiches/fiche.html?id=e0012">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0012.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0012.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0012.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0012.png" alt="Fiche Johnny Farago">
+                    </picture>
+                    <figcaption>Consulter la fiche de Johnny Farago</figcaption>
+                </figure>
             </figure>
-         </a>                 
+            </a>                 
 
-         <!-- 08. Camille Henry -->
-         <a href="../fiches/fiche.html?id=e0015">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0015.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0015.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0015.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0015.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Camille Henry</figcaption>
-            </figure>
-         </a>            
+            <!-- 08. Camille Henry -->
+            <a href="../fiches/fiche.html?id=e0015">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0015.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0015.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0015.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0015.png" alt="Fiche Camille Henry">
+                    </picture>
+                    <figcaption>Consulter la fiche de Camille Henry</figcaption>
+                </figure>
+            </a>            
 
-         <!-- 09. Louis Jobin -->
-         <a href="../fiches/fiche.html?id=e0016">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0016.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0016.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0016.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0016.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Louis Jobin</figcaption>
-            </figure>
-         </a>       
+            <!-- 09. Louis Jobin -->
+            <a href="../fiches/fiche.html?id=e0016">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0016.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0016.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0016.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0016.png" alt="Fiche Louis Jobin">
+                    </picture>
+                    <figcaption>Consulter la fiche de Louis Jobin</figcaption>
+                </figure>
+            </a>       
 
-         <!-- 10. Sigismund Mohr -->
-         <a href="../fiches/fiche.html?id=e0019">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0019.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0019.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0019.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0019.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Sigismund Mohr</figcaption>
-            </figure>
-         </a>     
+            <!-- 10. Sigismund Mohr -->
+            <a href="../fiches/fiche.html?id=e0019">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0019.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0019.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0019.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0019.png" alt="Fiche Sigismund Mohr">
+                    </picture>
+                    <figcaption>Consulter la fiche de Sigismund Mohr</figcaption>
+                </figure>
+            </a>     
          
-         <!-- 11. Alfred Pellan -->
-         <a href="../fiches/fiche.html?id=e0021">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0021.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0021.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0021.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0021.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Alfred Pellan</figcaption>
-            </figure>
-         </a>           
+            <!-- 11. Alfred Pellan -->
+            <a href="../fiches/fiche.html?id=e0021">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0021.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0021.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0021.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0021.png" alt="Fiche Alfred Pellan">
+                    </picture>
+                    <figcaption>Consulter la fiche de Alfred Pellan</figcaption>
+                </figure>
+            </a>           
 
-         <!-- 12. Maurice Pollack -->
-         <a href="../fiches/fiche.html?id=e0022">
-            <figure class="img_fiche">
-                <picture>
-                    <!-- Mobile -->
-                    <source 
-                    media = "(max-width: 600px)"
-                    srcset= "../assets/images/ImgGalerie/mobile/e0022.png">
-    
-                    <!-- Tablette -->
-                    <source 
-                    media = "(max-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/tablette/e0022.png">
-    
-                    <!-- Table -->
-                    <source 
-                    media = "(min-width: 800px)"
-                    srcset= "../assets/images/ImgGalerie/table/e0022.png">
-                    
-                    <img src="../assets/images/ImgGalerie/mobile/e0022.png" alt="Fiche Philippe-Joseph Aubert de Gaspé">
-                </picture>
-                <figcaption>Consulter la fiche de Maurice Pollack</figcaption>
-            </figure>
-         </a>            
-
+            <!-- 12. Maurice Pollack -->
+            <a href="../fiches/fiche.html?id=e0022">
+                <figure class="img_fiche">
+                    <picture>
+                        <!-- Mobile -->
+                        <source 
+                        media="(max-width: 600px)"
+                        srcset="../assets/images/ImgGalerie/mobile/e0022.png">
+        
+                        <!-- Tablette -->
+                        <source 
+                        media="(max-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/tablette/e0022.png">
+        
+                        <!-- Table -->
+                        <source 
+                        media="(min-width: 800px)"
+                        srcset="../assets/images/ImgGalerie/table/e0022.png">
+                        
+                        <img src="../assets/images/ImgGalerie/mobile/e0022.png" alt="Fiche Maurice Pollack">
+                    </picture>
+                    <figcaption>Consulter la fiche de Maurice Pollack</figcaption>
+                </figure>
+            </a>            
         </div>
-
     </main>
 
     <footer>
@@ -426,7 +421,7 @@
                 <span>
                     <span class="screen-reader-only">Facebook :</span>
                     <a href="http://www.facebook.com" target="_blank">
-                        <img src="../assets/svg/icones/Icones_footer/iconeFacebook.svg" alt="Icone Youtube" class="social-icon">
+                        <img src="../assets/svg/icones/Icones_footer/iconeFacebook.svg" alt="Icone Facebook" class="social-icon">
                     </a>
                 </span>
             </li>
@@ -439,5 +434,4 @@
         <p>Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. Cégep de Sainte-Foy</p>
     </footer>
 </body>
-
 </html>
