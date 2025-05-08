@@ -7,22 +7,32 @@
  * Normalize
  * Utilitaires
  * Charte typographique
+ * Body et main
+ * Flex
+ * Zones de texte beiges
+ * Zones de contenu turquoise et bleu
+ * Chasse
+ * Galerie et fiche
+ * Boutons
+ * Filtres
+ * Navigation principale
+ * Footer 
  */
 
 /* Normalize
-   ========================================================================== */
+   ============================================ */
 @import "_normalize.css";
 
 /* Utilitaires
-   ========================================================================== */
+   ============================================ */
 @import "_utilitaires.css";
 
 /* Charte typographique
-   ========================================================================== */
+   ============================================ */
 @import "_typo.css";
 
-/* Centrer le contenu
-   ========================================================================== */
+/* Body et main
+   ============================================ */
 body{
   margin: 0 auto;
   background-color: var(--bleu)
@@ -35,7 +45,7 @@ main{
 }
 
 /* Flex
-   ========================================================================== */
+   ============================================ */
    .flex{
     display: flex;
     align-items: center;
@@ -44,21 +54,17 @@ main{
   }
 
 /* Zones de texte beiges
-   ========================================================================== */
+   ============================================ */
    .conteneurTexte{
     background-color: var(--beige);
     outline: 2px solid var(--bleu); 
     outline-offset: -10px;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 3rem;
  }
 
  /* Zones de contenu turquoise et bleu
-   ========================================================================== */
+   ============================================ */
 .zoneTurquoise{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
   background-color: var(--bleuPale);
   padding: 2rem;
   margin: 2rem 0 2rem 0 ;
@@ -70,108 +76,14 @@ main{
   margin: 2rem 0 2rem 0 ;
 }
 
-/* Footer 
-   ========================================================================== */
-footer {
-  background-color: var(--beige);
-  padding: 2rem 1rem;
-  text-align: center;
-  border-top: 2px solid var(--bleu);
-  font-size: 0.95rem;
-}
-
-footer nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0;
-  font-weight: bold;
-  flex-wrap: wrap;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem; 
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: var(--noir);
-  font-weight: normal;
-}
-
-footer .social-icon {
-  display: inline-block;
-  width: 48px; 
-  height: 48px; 
-  background-color: var(--bleu);
-  border-radius: 50%;
-  margin-bottom: 0.25rem;
-  vertical-align: middle; 
-  overflow: hidden; 
-}
-
-footer .social-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-footer h3 {
-  font-weight: bold;
-  margin: 1rem 0;
-  font-size: 1rem;
-}
-
-footer p {
-  font-size: 0.8rem;
-  max-width: 800px;
-  margin: 0.3rem auto;
-  color: #333;
-}
-
-/* Image Épigraphe
-   ========================================================================== */
-.img_epigraphe{
-  width: 60%;
-  margin: 0 auto;
-
-  border-radius: 50%;
-  background-color: var(--bleu);
-  outline: var(--bleu) solid 3rem;
-  outline-offset: -10px;
-}
-
-/* Fiche
-   ========================================================================== */
-.flex_fiche {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media(min-width: 750px){
-  .flex_fiche {
-    display: flex;
-    flex-wrap: nowrap;
-
-  }
-}
-
 /* Chasse
-   ========================================================================== */
-
+   ============================================ */
    .zoneIconeChasse{
     list-style-type: none;
     padding: 0;
 }
 
-@media(min-width: 361px){
+@media(min-width: 420px){
   .zoneIconeChasse{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -195,19 +107,18 @@ footer p {
 
 .iconeChasse{
   text-align: center;
-  padding: 3rem 0 1rem 0;
-  margin-bottom: 1.5rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
 }
 
-@media(min-width: 361px){
+@media(min-width: 420px){
   .iconeChasse{
-    text-align: center;
-    padding: 3rem 0 0 0;
+    margin-bottom: 0;
   }
 }
 
  /* Galerie et fiche
-   ========================================================================== */
+   ============================================ */
 .galerie {
   display: flex;
   flex-wrap: wrap;
@@ -244,13 +155,38 @@ figcaption {
 }
 
 
-/* Boutons
-   ========================================================================== */
+.img_epigraphe{
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--bleu);
+  outline: var(--bleu) solid 3rem;
+  outline-offset: -10px;
+}
+  
 
+.flex_fiche {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+  @media(min-width: 750px){
+  .flex_fiche {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+
+/* Boutons
+   ============================================ */
 .bouton_jouer_chasse{
-  width: 473px;
+  width: auto;
   height: 145px;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   background-image: url(../svg/boutons/jouer_chasse.svg);
 }
 
@@ -263,8 +199,8 @@ figcaption {
 
 }
 
-
-/* filtres */
+/* Filtres
+   ============================================ */
 .filtres {
   display: flex;
   justify-content: center;
@@ -307,11 +243,11 @@ label {
 }
 
 /* Navigation principale
-   ========================================================================== */
+   ============================================ */
 header {
   background-color: var(--beige);
   border-bottom: 2px solid var(--bleu);
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 nav {
@@ -389,4 +325,69 @@ nav ul li a:focus {
     padding: 0.5rem;
   }
 }
+
+/* Footer 
+   ============================================ */
+   footer {
+    background-color: var(--beige);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--bleu);
+    font-size: 0.95rem;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: var(--noir);
+    font-weight: normal;
+  }
+  
+  footer .social-icon {
+    display: inline-block;
+    width: 48px; 
+    height: 48px; 
+    background-color: var(--bleu);
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
+    vertical-align: middle; 
+    overflow: hidden; 
+  }
+  
+  footer .social-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  footer h3 {
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+    max-width: 800px;
+    margin: 0.3rem auto;
+    color: #333;
+  }
  

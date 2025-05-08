@@ -2,6 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chasse aux épigraphes est un jeu, une chasse aux trésors imaginée par Énigma, firme spécialisée en jeux sérieux. Les données proviennent des épigraphes historiques de la Ville de Québec. Il est réalisé par Cassiopée Gariépy et Ewan Bernard, étudiants et étudiantes en première année du programme Techniques d’intégration multimédia.">
+	<meta name="keywords" content="Énigma, chasse, épigraphes, données ouvertes, Chasse aux épigraphes, personnages historiques">
+	<meta name="author" content="Énigma & le programme Techniques d’intégration multimédia du Cégep de Sainte-Foy">
     <title>Progression - Chasse aux épigraphes</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.png">
@@ -62,12 +65,14 @@
 
         <div class="zoneTurquoise">
 
-        <img src="../assets/svg/boutons/piger_chasse.svg" alt="Piger une chasse">
+            <div class="flex">
+                <img src="../assets/svg/boutons/piger_chasse.svg" alt="Piger une chasse">
+            </div>
+        
 
         <div class="zoneBleu" id="zoneChasseEnCours">
             <div class="conteneurTexte">
                 <h3 id="messageEtatChasse">Aucune chasse en cours</h3>
-
                 <p id="zoneEnigme" hidden>
                     <span id="segmentPersonnage"></span>
                     <span id="segmentObjet"> </span>
@@ -138,7 +143,7 @@
     <footer role="contentinfo">
         <nav>
             <ul>
-                <li><h2><a href="#">Accueil</a></h2></li>
+                <li><h2><a href="../accueil/index.html">Accueil</a></h2></li>
                 <li><h2><a href="../chasse/index.html">Chasse aux épigraphes</a></h2></li>
                 <li><h2><a href="../galerie/index.html">Galerie de personnages</a></h2></li>
                 <li><h2><a href="../carte/index.html">Carte</a></h2></li>
