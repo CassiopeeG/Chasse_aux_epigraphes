@@ -7,6 +7,7 @@
     <script defer src="../js/epigraphes.js"></script>
     <script defer src="../fiches/fiche.js"></script>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.png">
 </head>
 <body>
     <noscript>
@@ -151,38 +152,38 @@
 
         <!-- Si une chasse est en cours -->
         <div id="zoneChasseEnCours" hidden>
-            <form>
+            <form novalidate>
                 <fieldset>
                     <legend>
                         <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
                     </legend>
                     <ul>
                         <li>
-                            <input type="radio" name="formChasse" value="personnage" id="personnage" class="screen-reader-only"
+                            <input type="radio" name="formChasse" value="personnage" id="personnage"
                                 required>
                             <label for="personnage">Personnage</label>
                         </li>
                         <li>
-                            <input type="radio" name="formChasse" value="lieu" id="lieu" class="screen-reader-only">
+                            <input type="radio" name="formChasse" value="lieu" id="lieu">
                             <label for="lieu">Lieu</label>
                         </li>
                         <li>
-                            <input type="radio" name="formChasse" value="objet" id="objet" class="screen-reader-only">
+                            <input type="radio" name="formChasse" value="objet" id="objet">
                             <label for="objet">Objet</label>
                         </li>
                     </ul>
                 </fieldset>
                 <p id="message"></p>
                 <p>
-                    <button id="btnSoumettre">Soumettre</button>
+                    <button type="button" id="btnSoumettre">Soumettre</button>
                 </p>
             </form>
             <ul>
                 <li>
-                    <a href="../chasse/index.html">Vérifier votre progression de la chasse</a>
+                    <a href="../chasse/index.html">Consultez la page «Chasse» pour vérifier votre progression</a>
                 </li>
                 <li>
-                    <a href="../carte/index.html">Poursuivre la chasse </a>
+                    <a href="../carte/index.html">Consultez la «Carte» pour poursuivre la Chasse</a>
                 </li>
             </ul>
         </div>

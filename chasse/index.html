@@ -2,15 +2,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Chasse aux épigraphes</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.png">
+    <script defer src="../js/epigraphes.js"></script>
+    <script defer src="chasse.js"></script>
 </head>
 
 <body>
+    <noscript>
+        <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le cas
+            présentement. Alternativement, vous pouvez consulter le site de la Ville de Québec pour découvrir les épigraphes
+            historiques :
+            <a href="https://www.ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/index.aspx">ville.quebec.qc.ca/citoyens/patrimoine/personnalites/plaques-ici-vecut/</a>
+        </p>
+    </noscript>
     
     <header>
-        <div class="banniere">
+        <div role="banner" class="banniere">
             <picture >
                 <!-- Table -->
                 <source 
@@ -58,9 +67,15 @@
 
         <img src="../assets/svg/boutons/piger_chasse.svg" alt="Piger une chasse">
 
-        <div class="zoneBleu">
+        <div class="zoneBleu" id="zoneChasseEnCours">
             <div class="conteneurTexte">
-                <h3>Zone de texte pour la phrase d’indice. Lorem ipsum dolor sit amet, consectetur.  </h3>
+                <h3 id="messageEtatChasse">Aucune chasse en cours</h3>
+
+                <p id="zoneEnigme" hidden>
+                    <span id="segmentPersonnage"></span>
+                    <span id="segmentObjet"> </span>
+                    <span id="segmentLieu"> </span>
+                </p>
             </div>
             
             <ul class="zoneIconeChasse">
@@ -80,38 +95,41 @@
                 </li>
 
                 <li class="conteneurTexte iconeChasse">
-                    <p>Phrase pour l’indice lorem ipsum</p>
-                    <span class="retroaction_chasse"></span>
-                    <h3>Nom du personnage</h3>
+                    <h3>Indice du personnage</h3>
+                    <p id="personnageIndice">?</p>
+                    <span class="retroaction_chasse" id="personnageMessageTrouve" hidden>(trouvé)</span>
                 </li>
 
                 <li class="conteneurTexte iconeChasse">
-                    <p>Phrase pour l’indice lorem ipsum</p>
-                    <span class="retroaction_chasse"></span>
-                    <h3>Nom de l'objet</h3>
+                    <h3>Indice de l'objet</h3>
+                    <p id="objetIndice">?</p>
+                    <span class="retroaction_chasse" id="personnageMessageTrouve" hidden>(trouvé)</span>
                 </li>
 
                 <li class="conteneurTexte iconeChasse">
-                    <p>Phrase pour l’indice lorem ipsum</p>
-                    <span class="retroaction_chasse"></span>
-                    <h3>Nom du lieu</h3>
+                    <h3>Indice du lieu</h3>
+                    <p id="lieuIndice">?</p>
+                    <span class="retroaction_chasse" id="personnageMessageTrouve" hidden>(trouvé)</span>
                 </li>
             </ul>
+
+            <div class="conteneurTexte" id="zoneMessageChasseCompletee" hidden>
+                <h2 id="messageChasseCompletee">Bravo! Votre avez complété la chasse!</h2>
+                <button type="button" id="btnConcours">Participer au concours</button>
+            </div>
 
             <div class="conteneurTexte">
                 <ul>
                     <li>
-                        Activez le bouton pour piger une nouvelle chasse
-                        <object type="image/svg+xml" data="../assets/Objets_Svg/boutons/btnPigerNouvelleChasse.html"></object>
+                        <button type="button" id="btnDebuterChasse">Débuter une chasse</button>
                     </li>
 
                     <li>
-                        Voulez-vous partir à la chasse au indices?
-                        <object type="image/svg+xml" data="../assets/Objets_Svg/boutons/btnAllerGalerie.html"></object>
+                        <button type="button" id="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
                     </li>
 
                     <li>
-                        <object type="image/svg+xml" data="../assets/Objets_Svg/boutons/btnConsulterCarte.html"></object>
+                        <a id="lienChercherIndices" href="../carte/index.html" hidden>Chercher des indices</a>
                     </li>
                 </ul>
             </div>
