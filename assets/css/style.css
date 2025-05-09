@@ -60,6 +60,7 @@ main{
     outline: 2px solid var(--bleu); 
     outline-offset: -10px;
     padding: 3rem;
+    margin-bottom: 2rem;
  }
 
  /* Zones de contenu turquoise et bleu
@@ -239,6 +240,18 @@ figcaption {
   background-image: url(../svg/boutons/piger_chasse_click.svg);
 }
 
+/* Bouton participer concours */
+.bouton_participer_concours{
+  height: 100px;
+  margin-bottom: 1rem;
+  background-image: url(../svg/boutons/participer_concours.svg);
+}
+.bouton_participer_concours:hover{
+  background-image: url(../svg/boutons/participer_concours_hover.svg);
+}
+.bouton_participer_concours:active{
+  background-image: url(../svg/boutons/participer_concours_click.svg);
+}
 
 /* Bouton piger nouvelle chasse */
 .bouton_piger_nouvelle_chasse{

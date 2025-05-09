@@ -112,6 +112,10 @@ function initialiser() {
 
         //Enlever le message "chasse en cour"
         document.getElementById("messageEtatChasse").setAttribute("hidden", true)
+
+        //Enlever la zone chercherIndices
+        document.getElementById("lienChercherIndices").setAttribute("hidden", true)
+
         //Ajouter message Chasse Completé
         document.getElementById("zoneMessageChasseCompletee").removeAttribute("hidden")
     }

@@ -105,19 +105,23 @@
                 <li class="conteneurTexte iconeChasse">
                     <h3>Indice de l'objet</h3>
                     <p id="objetIndice">?</p>
-                    <span class="retroaction_chasse" id="personnageMessageTrouve" hidden>(trouvé)</span>
+                    <span class="retroaction_chasse" id="objetMessageTrouve" hidden>(trouvé)</span>
                 </li>
 
                 <li class="conteneurTexte iconeChasse">
                     <h3>Indice du lieu</h3>
                     <p id="lieuIndice">?</p>
-                    <span class="retroaction_chasse" id="personnageMessageTrouve" hidden>(trouvé)</span>
+                    <span class="retroaction_chasse" id="lieuMessageTrouve" hidden>(trouvé)</span>
                 </li>
             </ul>
 
-            <div class="conteneurTexte" id="zoneMessageChasseCompletee" hidden>
+            <div class="conteneurTexte iconeChasse" id="zoneMessageChasseCompletee" hidden>
                 <h2 id="messageChasseCompletee">Bravo! Votre avez complété la chasse!</h2>
-                <button type="button" id="btnConcours">Participer au concours</button>
+
+                <a href="../concours/index.html" id="btnConcours">
+                    <div class="bouton bouton_participer_concours"></div>
+                    <button type="button" id="btnConcours" class="screen-reader-only">Participer au concours</button>
+                </a>
             </div>
 
             <div class="conteneurTexte" id="lienChercherIndices" hidden>
