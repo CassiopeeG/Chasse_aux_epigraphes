@@ -69,7 +69,7 @@ function tirerAuSort(max) {
   }
 
 function reactiverBoutonDebuterChasse() {
-    document.getElementById("btnDebuterChasse").removeAttribute("disabled")
+    document.getElementById("btnDebuterChasse").removeAttribute("hidden")
 }
 
 
@@ -80,7 +80,7 @@ function initialiser() {
     document.getElementById("messageEtatChasse").innerHTML = "Chasse en cours"
 
     //Désactiver le bouton débuterChasse
-    document.getElementById("btnDebuterChasse").setAttribute("disabled", true)
+    document.getElementById("btnDebuterChasse").setAttribute("hidden", true)
     //Affiher le bouton debuterNouvelleChasse
     document.getElementById("btnDemarrerNouvelleChasse").removeAttribute("hidden")
 

@@ -63,12 +63,12 @@
             </ul>
         </div>
 
-        <div class="zoneTurquoise">
-
-            <div class="flex">
-                <img src="../assets/svg/boutons/piger_chasse.svg" alt="Piger une chasse">
-            </div>
-        
+        <div class="zoneTurquoise" target="chasse">
+            
+            <a href="#chasse" id="btnDebuterChasse">
+                <div class="bouton_piger_chasse"></div>
+                <button type="button" id="btnDebuterChasse" class="screen-reader-only">Piger une chasse</button>
+            </a>
 
         <div class="zoneBleu" id="zoneChasseEnCours">
             <div class="conteneurTexte">
@@ -122,10 +122,6 @@
 
             <div class="conteneurTexte">
                 <ul>
-                    <li>
-                        <button type="button" id="btnDebuterChasse">Débuter une chasse</button>
-                    </li>
-
                     <li>
                         <button type="button" id="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
                     </li>

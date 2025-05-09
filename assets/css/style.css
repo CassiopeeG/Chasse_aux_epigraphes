@@ -181,6 +181,8 @@ figcaption {
 
 /* Boutons
    ============================================ */
+
+/* Bouton jouer chasse */
 .bouton_jouer_chasse{
   width: auto;
   height: 145px;
@@ -196,7 +198,42 @@ figcaption {
 
 .bouton_jouer_chasse:active{
   background-image: url(../svg/boutons/jouer_chasse_click.svg);
+}
 
+/* Bouton piger chasse */
+.bouton_piger_chasse{
+  width: auto;
+  height: 145px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../svg/boutons/piger_chasse.svg);
+}
+
+.bouton_piger_chasse:hover{
+  background-image: url(../svg/boutons/piger_chasse_hover.svg);
+}
+
+.bouton_piger_chasse:active{
+  background-image: url(../svg/boutons/piger_chasse_click.svg);
+}
+
+/* Bouton piger nouvelle chasse */
+.bouton_piger_nouvelle_chasse{
+  width: auto;
+  height: 145px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../svg/boutons/piger_nouvelle_chasse.svg);
+}
+
+.bouton_piger_nouvelle_chasse:hover{
+  background-image: url(../svg/boutons/piger_nouvelle_chasse_hover.svg);
+}
+
+.bouton_piger_nouvelle_chasse:active{
+  background-image: url(../svg/boutons/piger_nouvelle_chasse_click.svg);
 }
 
 /* Filtres
