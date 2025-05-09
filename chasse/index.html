@@ -63,10 +63,10 @@
             </ul>
         </div>
 
-        <div class="zoneTurquoise" target="chasse">
+        <div class="zoneTurquoise" id="chasse">
             
             <a href="#chasse" id="btnDebuterChasse">
-                <div class="bouton_piger_chasse"></div>
+                <div class="bouton bouton_piger_chasse"></div>
                 <button type="button" id="btnDebuterChasse" class="screen-reader-only">Piger une chasse</button>
             </a>
 
@@ -120,14 +120,25 @@
                 <button type="button" id="btnConcours">Participer au concours</button>
             </div>
 
-            <div class="conteneurTexte">
-                <ul>
+            <div class="conteneurTexte" id="lienChercherIndices" hidden>
+                <ul class="zoneBoutonChasse">
                     <li>
-                        <button type="button" id="btnDemarrerNouvelleChasse" hidden>Voulez-vous démarrer une nouvelle chasse?</button>
+                        <a href="#chasse" id="btnDemarrerNouvelleChasse">
+                            <div class="bouton bouton_piger_nouvelle_chasse"></div>
+                        </a>
                     </li>
 
                     <li>
-                        <a id="lienChercherIndices" href="../carte/index.html" hidden>Chercher des indices</a>
+                        <a href="../galerie/index.html">
+                            <div class="bouton bouton_aller_galerie"></div>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="../carte/index.html">
+                            <div class="bouton bouton_consulter_carte"></div>
+                            <button type="button" id="btnDemarrerNouvelleChasse" class="screen-reader-only">Aller consulter la carte</button>
+                        </a>
                     </li>
                 </ul>
             </div>

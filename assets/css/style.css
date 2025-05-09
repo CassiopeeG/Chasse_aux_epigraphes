@@ -105,6 +105,33 @@ main{
   }
 }
 
+.zoneBoutonChasse{
+  list-style-type: none;
+  padding: 0;
+}
+
+@media(min-width: 420px){
+.zoneBoutonChasse{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+}
+
+@media(min-width: 751px){
+.zoneBoutonChasse{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+}
+
 .iconeChasse{
   text-align: center;
   padding: 2rem;
@@ -154,7 +181,6 @@ figcaption {
   max-width: 200px; 
 }
 
-
 .img_epigraphe{
   width: 60%;
   margin: 0 auto;
@@ -164,7 +190,6 @@ figcaption {
   outline-offset: -10px;
 }
   
-
 .flex_fiche {
   display: flex;
   flex-wrap: wrap;
@@ -178,62 +203,77 @@ figcaption {
   }
 }
 
-
 /* Boutons
    ============================================ */
 
-/* Bouton jouer chasse */
-.bouton_jouer_chasse{
+/* Styles communs pour les boutons */
+.bouton{
   width: auto;
-  height: 145px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(../svg/boutons/jouer_chasse.svg);
 }
 
+/* Bouton jouer chasse */
+.bouton_jouer_chasse{ 
+  height: 145px;
+  background-image: url(../svg/boutons/jouer_chasse.svg);
+}
 .bouton_jouer_chasse:hover{
   background-image: url(../svg/boutons/jouer_chasse_hover.svg);
 }
-
 .bouton_jouer_chasse:active{
   background-image: url(../svg/boutons/jouer_chasse_click.svg);
 }
 
+
 /* Bouton piger chasse */
 .bouton_piger_chasse{
-  width: auto;
   height: 145px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: url(../svg/boutons/piger_chasse.svg);
 }
-
 .bouton_piger_chasse:hover{
   background-image: url(../svg/boutons/piger_chasse_hover.svg);
 }
-
 .bouton_piger_chasse:active{
   background-image: url(../svg/boutons/piger_chasse_click.svg);
 }
 
+
 /* Bouton piger nouvelle chasse */
 .bouton_piger_nouvelle_chasse{
-  width: auto;
-  height: 145px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 73px;
   background-image: url(../svg/boutons/piger_nouvelle_chasse.svg);
 }
-
 .bouton_piger_nouvelle_chasse:hover{
   background-image: url(../svg/boutons/piger_nouvelle_chasse_hover.svg);
 }
-
 .bouton_piger_nouvelle_chasse:active{
   background-image: url(../svg/boutons/piger_nouvelle_chasse_click.svg);
+}
+
+/* Bouton piger consulter carte */
+.bouton_aller_galerie{
+  height: 73px;
+  background-image: url(../svg/boutons/aller_galerie.svg);
+}
+.bouton_aller_galerie:hover{
+  background-image: url(../svg/boutons/aller_galerie_hover.svg);
+}
+.bouton_aller_galerie:active{
+  background-image: url(../svg/boutons/aller_galerie_click.svg);
+}
+
+/* Bouton piger consulter carte */
+.bouton_consulter_carte{
+  height: 73px;
+  background-image: url(../svg/boutons/consulter_carte.svg);
+}
+.bouton_consulter_carte:hover{
+  background-image: url(../svg/boutons/consulter_carte_hover.svg);
+}
+.bouton_consulter_carte:active{
+  background-image: url(../svg/boutons/consulter_carte_click.svg);
 }
 
 /* Filtres
