@@ -38,7 +38,7 @@ body{
   background-color: var(--bleu)
 }
 
-main{
+main, aside{
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
