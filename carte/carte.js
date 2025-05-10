@@ -35,7 +35,6 @@ const objCarte = {
 		for (let strIdEpigraphe in objJSONepigraphes) {
 			const objEpigrapheCourant = objJSONepigraphes[strIdEpigraphe];
 
-			//à compléter en remplaçant toutes les valeurs fixes par celles du json de la fiche actuelle! :
 			const strGabaritContenuInfobulle =
 			`<div class="infobulle">
 				<div class="image">
@@ -46,21 +45,21 @@ const objCarte = {
 				<a class="btn" href="../fiches/fiche.html?id=${strIdEpigraphe}&titre=${objEpigrapheCourant.PRENOM}-${objEpigrapheCourant.NOM}">Consulter la fiche de ${objEpigrapheCourant.PRENOM} ${objEpigrapheCourant.NOM}</a>
 			</div>`;
 
-			// console.log(strGabaritContenuInfobulle);
-
 			const objInfobulle = new google.maps.InfoWindow({
 				content: strGabaritContenuInfobulle
 			});
 
+			//Récupère le tableau des fiches visitées disponible dans le local storage
 			let refArrFichesVisites = localStorage.getItem("arrFichesVisites")
 			let refUrlMarqueur = "marqueurs/landmark-orchid.svg"
 
+			//Si une fiche a été visitée, et si le tableau contient l'Id d'un épigraphe, le marqueur est changé pour une autre couleur
 			if(refArrFichesVisites){
 				if(refArrFichesVisites.includes(strIdEpigraphe) == true){
 					refUrlMarqueur = "marqueurs/landmark-navy.svg"
 				}
 			}
-
+			
 			const objMarqueur = new google.maps.Marker({
 				position: new google.maps.LatLng(objEpigrapheCourant.LATITUDE, objEpigrapheCourant.LONGITUDE),
 				title: objEpigrapheCourant.IMAGE.TITRE,

@@ -16,6 +16,9 @@ document.getElementById("btnDemarrerNouvelleChasse").addEventListener("click", r
 // Fonctions 
 //*************************
 
+/**
+ * Sert à démarrer la Chasse, soit piger l'énigme, 
+ */
 function demarrerChasse() {
     //Tirage au sort dans les tableaux des possibilités et mise en localStorage
 
@@ -40,10 +43,14 @@ function demarrerChasse() {
     
     localStorage.id_chasseEnCours = "true"
     localStorage.arrFichesVisites = ""
+
     afficherIndice()
     initialiser()
 }
 
+/**
+ * Sert à afficher les indices et la zoneÉnigme
+ */
 function afficherIndice(){
     if(localStorage.getItem("id_chasseEnCours") == "true"){
         //Afficher la zoneÉnigme
@@ -54,7 +61,7 @@ function afficherIndice(){
         document.getElementById("segmentObjet").innerHTML = objJSONepigraphes[localStorage.getItem("id_objet")].CHASSE.INDICE;
         //Afficher le segment qui parle du lieu
         document.getElementById("segmentLieu").innerHTML = objJSONepigraphes[localStorage.getItem("id_lieu")].CHASSE.INDICE;
-    
+
         // Afficher l'indice personnage
         document.getElementById("personnageIndice").innerHTML = objJSONepigraphes[localStorage.getItem("id_personnage")].CHASSE.INDICE;
         // Afficher l'indice objet
@@ -64,15 +71,27 @@ function afficherIndice(){
     }
 }
     
+
+/**
+ * Fonction appelé lors de la pige de la chasse pour tirer un nombre au sort
+ * @param {*} max nombre maximum qui peut être pigé
+ * @returns un numéro au hasard
+ */
 function tirerAuSort(max) {
     return Math.floor(Math.random() * max);
   }
 
+/**
+ * Fonction pour réactiver le bouton "Débuter Chasse", et autoriser de piger une nouvelle chasse
+ */
 function reactiverBoutonDebuterChasse() {
     document.getElementById("btnDebuterChasse").removeAttribute("hidden")
 }
 
 
+/**
+ * Fonction pour mettre à jour les messages, indices et boutons 
+ */
 function initialiser() {
     if(localStorage.getItem("id_chasseEnCours") == "true"){
 
