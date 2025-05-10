@@ -187,8 +187,8 @@ figcaption {
   margin: 0 auto;
   border-radius: 50%;
   background-color: var(--bleu);
-  outline: var(--bleu) solid 3rem;
-  outline-offset: -10px;
+  outline: var(--bleu) solid 4rem;
+  outline-offset: 0px;
 }
   
 .flex_fiche {
