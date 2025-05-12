@@ -16,6 +16,7 @@
  * Boutons
  * Filtres
  * Navigation principale
+ * Vidéo
  * Footer 
  */
 
@@ -151,8 +152,7 @@ main, aside{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem; 
-  padding: 2rem;
+  padding-top: 2rem;
 }
 
 .img_fiche {
@@ -173,8 +173,9 @@ main, aside{
 
 figcaption {
   margin-top: 0.5rem;
-  font-size: 1rem;
-  color: #333;
+  color: var(--noir);
+  max-width: 100%;
+  font-size: 16px;
 }
 
 .img_fiche .conteneurTexte {
@@ -204,6 +205,20 @@ figcaption {
   }
 }
 
+a{
+  text-decoration: none;
+}
+
+.lien{
+  color: var(--noir);
+  text-decoration: underline;
+  line-height: 3rem;
+}
+
+.lien:hover{
+  color: var(--bleu);
+}
+
 /* Boutons
    ============================================ */
 
@@ -226,7 +241,6 @@ figcaption {
 .bouton_jouer_chasse:active{
   background-image: url(../svg/boutons/jouer_chasse_click.svg);
 }
-
 
 /* Bouton piger chasse */
 .bouton_piger_chasse{
@@ -305,6 +319,7 @@ figcaption {
 .filtres__indices, .filtres__activitées {
   flex: 1;
   padding: 1rem;
+  list-style: none;
 }
 
 .filtres h2 {
@@ -330,6 +345,17 @@ label {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+}
+
+button{
+  padding: 2rem;
+  background-color: var(--bleuPale);
+  border: 5px solid var(--bleu);
+}
+
+button:hover{
+  background-color: var(--beige);
+  border: 5px solid var(--or);
 }
 
 /* Navigation principale
@@ -430,7 +456,7 @@ nav ul li a:focus {
   background-color: var(--beige);
 }
 
-/* Vidép
+/* Vidéo
    ============================================ */
 video{
   border: 5px solid var(--or);
