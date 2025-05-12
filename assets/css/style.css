@@ -416,6 +416,20 @@ nav ul li a:focus {
   }
 }
 
+.screen-reader-only.focusable:active,
+.screen-reader-only.focusable:focus{
+  margin: 2rem auto;
+  padding: 2rem;
+
+  outline: 4px solid var(--bleuPale);
+  width: fit-content;
+  display: block;
+  text-align: center;
+  
+  color: var(--bleu);
+  background-color: var(--beige);
+}
+
 /* Vidép
    ============================================ */
 video{
