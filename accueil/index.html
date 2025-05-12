@@ -8,9 +8,13 @@
     <title>Accueil - Chasse aux Épigraphes</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/Favicon.png">
+    <link rel="stylesheet" href="../js/picturefill.min.js">
 </head>
 
 <body>
+    <!-- Lien Aller au contenu -->
+    <a href="#contenu" class="sauter screen-reader-only focusable">Allez au contenu</a> 
+    
     <noscript>
         <p>Pour apprécier pleinement ce site, votre navigateur doit disposer de JavaScript, ce qui ne semble pas être le
             cas
@@ -55,12 +59,11 @@
         </nav>
     </header>
 
-    <main>
-        <p class=".placeHolder">ici sera la video</p>
-        <video loop="" muted="" playsinline="" poster="">
-            <source src="" type="">
+    <main id="contenu">
+          <video controls loop="" muted="" playsinline="" poster="">
+            <source src="../assets/video.mp4" type="video/mp4">
+            Si votre navigateur ne permet pas de lire la vidéo, vous pouvez toujours <a href="">la télécharger</a>
           </video>
-          <p>Si votre navigateur ne permet pas de lire la vidéo, vous pouvez toujours <a href="">la télécharger</a></p>
 
           <p class="conteneurTexte">
             Les 135 plaques &#171;Ici vécut&#187; présentes sur le territoire de la ville de Québec permettent de rappeler de belle façon le souvenir de personnes qui, chacune à leur manière, ont laissé leur marque dans la société québécoise. De ces 135 plaques, 12 ont été sélectionnées pour ce projet.
