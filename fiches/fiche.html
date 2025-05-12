@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chasse aux épigraphes est un jeu, une chasse aux trésors imaginée par Énigma, firme spécialisée en jeux sérieux. Les données proviennent des épigraphes historiques de la Ville de Québec. Il est réalisé par Cassiopée Gariépy et Ewan Bernard, étudiants et étudiantes en première année du programme Techniques d’intégration multimédia.">
+	<meta name="keywords" content="Énigma, chasse, épigraphes, données ouvertes, Chasse aux épigraphes, personnages historiques">
+	<meta name="author" content="Énigma & le programme Techniques d’intégration multimédia du Cégep de Sainte-Foy">
     <title>Edmund Alleyn</title>
     <script defer src="../js/epigraphes.js"></script>
     <script defer src="../fiches/fiche.js"></script>
@@ -37,9 +40,6 @@
                 <img src="../assets/images/banniere/banniere-mobile.png" alt="">
             </picture>
         </div>
-        
-        <h1 class="screen-reader-only">Chasse aux Épigraphes</h1>
-        <h2 class="screen-reader-only">dans la ville de Québec</h2>
 
         <nav>
             <ul>
@@ -124,18 +124,18 @@
                 Consultez la transcription textuelle qui suit.
         </audio>
         <h3>Transcription textuelle</h3>
-        <p id="audio_preambule">
+        <p id="audio_preambule" class="conteneurTexte">
             Maurice Pollack s’illustre dans le domaine du commerce. L’histoire à succès de ce membre éminent de la 
             communauté juive de Québec révèle cependant un aspect moins connu de notre passé : celui de la vague 
             d’antisémitisme qui a touché la ville durant les années 1930.
         </p>
-        <p id="audio_transcription">
+        <p id="audio_transcription" class="conteneurTexte">
             Les gens de Québec se souviennent de Maurice Pollack (...) Proin gravida dolor sit amet lacus accumsan et 
             viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient 
             montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, 
             sed Nam fermentum, nulla luctus pharetra vulputate, amet lacus accumsan et viverra justo commodo leda.
         </p>
-        <p id="audio_credit">
+        <p id="audio_credit" class="conteneurTexte">
             Jennifer Alleyn est cinéaste. Elle s’investit dans la transmission de
             l’œuvre de son père, entre autres par la publication d’un site Internet et la réalisation de
             documentaires.
@@ -144,18 +144,18 @@
     
     <aside role="complementary">
         <!-- Si l’utilisateur n’a pas débuté une chasse -->
-        <div id="zoneAucuneChasseEnCours">
+        <div id="zoneAucuneChasseEnCours" class="conteneurTexte">
             <h2>Soumettre cette fiche comme élément trouvé</h2>
             <p><span id="statusChasse">Aucune chasse en cours. Si vous désirez débuter une chasse, visitez la page <a
                     href="../chasse/index.html">Chasse</a>.</span></p>
         </div>
 
         <!-- Si une chasse est en cours -->
-        <div id="zoneChasseEnCours" hidden>
+        <div id="zoneChasseEnCours" class="conteneurTexte" hidden>
             <form novalidate>
                 <fieldset>
                     <legend>
-                        <h2>Soumettre cette fiche comme élément trouvé <span id="progressionChasse">(0 indice trouvé sur 3)</span></h2>
+                        <h2>Soumettre cette fiche comme élément trouvé</h2>
                     </legend>
                     <ul>
                         <li>
@@ -189,10 +189,10 @@
         </div>
     </aside>
 
-    <footer>
+    <footer role="contentinfo">
         <nav>
             <ul>
-                <li><h2><a href="#">Accueil</a></h2></li>
+                <li><h2><a href="../accueil/index.html">Accueil</a></h2></li>
                 <li><h2><a href="../chasse/index.html">Chasse aux épigraphes</a></h2></li>
                 <li><h2><a href="../galerie/index.html">Galerie de personnages</a></h2></li>
                 <li><h2><a href="../carte/index.html">Carte</a></h2></li>

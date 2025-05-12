@@ -7,35 +7,45 @@
  * Normalize
  * Utilitaires
  * Charte typographique
+ * Body et main
+ * Flex
+ * Zones de texte beiges
+ * Zones de contenu turquoise et bleu
+ * Chasse
+ * Galerie et fiche
+ * Boutons
+ * Filtres
+ * Navigation principale
+ * Footer 
  */
 
 /* Normalize
-   ========================================================================== */
+   ============================================ */
 @import "_normalize.css";
 
 /* Utilitaires
-   ========================================================================== */
+   ============================================ */
 @import "_utilitaires.css";
 
 /* Charte typographique
-   ========================================================================== */
+   ============================================ */
 @import "_typo.css";
 
-/* Centrer le contenu
-   ========================================================================== */
+/* Body et main
+   ============================================ */
 body{
   margin: 0 auto;
   background-color: var(--bleu)
 }
 
-main{
+main, aside{
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
 /* Flex
-   ========================================================================== */
+   ============================================ */
    .flex{
     display: flex;
     align-items: center;
@@ -44,21 +54,18 @@ main{
   }
 
 /* Zones de texte beiges
-   ========================================================================== */
+   ============================================ */
    .conteneurTexte{
     background-color: var(--beige);
     outline: 2px solid var(--bleu); 
     outline-offset: -10px;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 3rem;
+    margin-bottom: 2rem;
  }
 
  /* Zones de contenu turquoise et bleu
-   ========================================================================== */
+   ============================================ */
 .zoneTurquoise{
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-
   background-color: var(--bleuPale);
   padding: 2rem;
   margin: 2rem 0 2rem 0 ;
@@ -70,108 +77,14 @@ main{
   margin: 2rem 0 2rem 0 ;
 }
 
-/* Footer 
-   ========================================================================== */
-footer {
-  background-color: var(--beige);
-  padding: 2rem 1rem;
-  text-align: center;
-  border-top: 2px solid var(--bleu);
-  font-size: 0.95rem;
-}
-
-footer nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 1rem 0;
-  font-weight: bold;
-  flex-wrap: wrap;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem; 
-  list-style: none;
-  padding: 0;
-  margin: 1rem 0;
-}
-
-footer ul li a {
-  text-decoration: none;
-  color: var(--noir);
-  font-weight: normal;
-}
-
-footer .social-icon {
-  display: inline-block;
-  width: 48px; 
-  height: 48px; 
-  background-color: var(--bleu);
-  border-radius: 50%;
-  margin-bottom: 0.25rem;
-  vertical-align: middle; 
-  overflow: hidden; 
-}
-
-footer .social-icon svg {
-  width: 100%;
-  height: 100%;
-}
-
-footer h3 {
-  font-weight: bold;
-  margin: 1rem 0;
-  font-size: 1rem;
-}
-
-footer p {
-  font-size: 0.8rem;
-  max-width: 800px;
-  margin: 0.3rem auto;
-  color: #333;
-}
-
-/* Image Épigraphe
-   ========================================================================== */
-.img_epigraphe{
-  width: 60%;
-  margin: 0 auto;
-
-  border-radius: 50%;
-  background-color: var(--bleu);
-  outline: var(--bleu) solid 3rem;
-  outline-offset: -10px;
-}
-
-/* Fiche
-   ========================================================================== */
-.flex_fiche {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-@media(min-width: 750px){
-  .flex_fiche {
-    display: flex;
-    flex-wrap: nowrap;
-
-  }
-}
-
 /* Chasse
-   ========================================================================== */
-
+   ============================================ */
    .zoneIconeChasse{
     list-style-type: none;
     padding: 0;
 }
 
-@media(min-width: 361px){
+@media(min-width: 420px){
   .zoneIconeChasse{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -193,21 +106,47 @@ footer p {
   }
 }
 
-.iconeChasse{
-  text-align: center;
-  padding: 3rem 0 1rem 0;
-  margin-bottom: 1.5rem;
+.zoneBoutonChasse{
+  list-style-type: none;
+  padding: 0;
 }
 
-@media(min-width: 361px){
+@media(min-width: 420px){
+.zoneBoutonChasse{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+}
+
+@media(min-width: 751px){
+.zoneBoutonChasse{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+}
+
+.iconeChasse{
+  text-align: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media(min-width: 420px){
   .iconeChasse{
-    text-align: center;
-    padding: 3rem 0 0 0;
+    margin-bottom: 0;
   }
 }
 
  /* Galerie et fiche
-   ========================================================================== */
+   ============================================ */
 .galerie {
   display: flex;
   flex-wrap: wrap;
@@ -243,28 +182,115 @@ figcaption {
   max-width: 200px; 
 }
 
-
-/* Boutons
-   ========================================================================== */
-
-.bouton_jouer_chasse{
-  width: 473px;
-  height: 145px;
-  background-size: cover;
-  background-image: url(../svg/boutons/jouer_chasse.svg);
+.img_epigraphe{
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: var(--bleu);
+  outline: var(--bleu) solid 4rem;
+  outline-offset: 0px;
+}
+  
+.flex_fiche {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+  
+  @media(min-width: 750px){
+  .flex_fiche {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
+/* Boutons
+   ============================================ */
+
+/* Styles communs pour les boutons */
+.bouton{
+  width: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Bouton jouer chasse */
+.bouton_jouer_chasse{ 
+  height: 145px;
+  background-image: url(../svg/boutons/jouer_chasse.svg);
+}
 .bouton_jouer_chasse:hover{
   background-image: url(../svg/boutons/jouer_chasse_hover.svg);
 }
-
 .bouton_jouer_chasse:active{
   background-image: url(../svg/boutons/jouer_chasse_click.svg);
-
 }
 
 
-/* filtres */
+/* Bouton piger chasse */
+.bouton_piger_chasse{
+  height: 145px;
+  background-image: url(../svg/boutons/piger_chasse.svg);
+}
+.bouton_piger_chasse:hover{
+  background-image: url(../svg/boutons/piger_chasse_hover.svg);
+}
+.bouton_piger_chasse:active{
+  background-image: url(../svg/boutons/piger_chasse_click.svg);
+}
+
+/* Bouton participer concours */
+.bouton_participer_concours{
+  height: 100px;
+  margin-bottom: 1rem;
+  background-image: url(../svg/boutons/participer_concours.svg);
+}
+.bouton_participer_concours:hover{
+  background-image: url(../svg/boutons/participer_concours_hover.svg);
+}
+.bouton_participer_concours:active{
+  background-image: url(../svg/boutons/participer_concours_click.svg);
+}
+
+/* Bouton piger nouvelle chasse */
+.bouton_piger_nouvelle_chasse{
+  height: 73px;
+  background-image: url(../svg/boutons/piger_nouvelle_chasse.svg);
+}
+.bouton_piger_nouvelle_chasse:hover{
+  background-image: url(../svg/boutons/piger_nouvelle_chasse_hover.svg);
+}
+.bouton_piger_nouvelle_chasse:active{
+  background-image: url(../svg/boutons/piger_nouvelle_chasse_click.svg);
+}
+
+/* Bouton piger consulter carte */
+.bouton_aller_galerie{
+  height: 73px;
+  background-image: url(../svg/boutons/aller_galerie.svg);
+}
+.bouton_aller_galerie:hover{
+  background-image: url(../svg/boutons/aller_galerie_hover.svg);
+}
+.bouton_aller_galerie:active{
+  background-image: url(../svg/boutons/aller_galerie_click.svg);
+}
+
+/* Bouton piger consulter carte */
+.bouton_consulter_carte{
+  height: 73px;
+  background-image: url(../svg/boutons/consulter_carte.svg);
+}
+.bouton_consulter_carte:hover{
+  background-image: url(../svg/boutons/consulter_carte_hover.svg);
+}
+.bouton_consulter_carte:active{
+  background-image: url(../svg/boutons/consulter_carte_click.svg);
+}
+
+/* Filtres
+   ============================================ */
 .filtres {
   display: flex;
   justify-content: center;
@@ -307,11 +333,11 @@ label {
 }
 
 /* Navigation principale
-   ========================================================================== */
+   ============================================ */
 header {
   background-color: var(--beige);
   border-bottom: 2px solid var(--bleu);
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 nav {
@@ -389,4 +415,69 @@ nav ul li a:focus {
     padding: 0.5rem;
   }
 }
+
+/* Footer 
+   ============================================ */
+   footer {
+    background-color: var(--beige);
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 2px solid var(--bleu);
+    font-size: 0.95rem;
+  }
+  
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    font-weight: bold;
+    flex-wrap: wrap;
+  }
+  
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  
+  footer ul li a {
+    text-decoration: none;
+    color: var(--noir);
+    font-weight: normal;
+  }
+  
+  footer .social-icon {
+    display: inline-block;
+    width: 48px; 
+    height: 48px; 
+    background-color: var(--bleu);
+    border-radius: 50%;
+    margin-bottom: 0.25rem;
+    vertical-align: middle; 
+    overflow: hidden; 
+  }
+  
+  footer .social-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  footer h3 {
+    font-weight: bold;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+    max-width: 800px;
+    margin: 0.3rem auto;
+    color: #333;
+  }
  

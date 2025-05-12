@@ -12,12 +12,18 @@ let intIdFicheCourante = obtenirValeurUrlParam("id")
 window.addEventListener("load", initialiser);
 document.getElementById("btnSoumettre").addEventListener("click", validerPieceConviction);
 
+//*************************
+// Fonctions 
+//*************************
+/**
+ * Fonction pour initialiser la fiche, et ainsi la mettre à jour grâce à l'id dans l'URL
+ */
 function initialiser(){
     let prenom = objJSONepigraphes[intIdFicheCourante].PRENOM
     let nom = objJSONepigraphes[intIdFicheCourante].NOM
     let nomComplet = prenom + " " + nom
 
-    // AJOUT DU LOCAL STORAGE POUR LA MAP
+    // AJOUT DU LOCAL STORAGE POUR LA CARTE GOOGLE MAP
     localStorage.arrFichesVisites += ", " + intIdFicheCourante 
 
     //Title
@@ -78,17 +84,18 @@ function initialiser(){
     //Capsule Sonore Credit
     document.getElementById("audio_credit").innerHTML = objJSONepigraphes[intIdFicheCourante].AUDIO.CREDIT
 
+    //Sert à afficher la zone pour soumettre un indice si la chasse est en cour
     if(localStorage.id_chasseEnCours == "true"){
         document.getElementById("zoneAucuneChasseEnCours").hidden = true
         document.getElementById("zoneChasseEnCours").hidden = false
-
-        
     }
 }
 
 obtenirValeurUrlParam()
 
-
+/**
+ * Fonction pour valider si l'indice soumis est le bon, et afficher les rétroaction
+ */
 function validerPieceConviction() {
     const refRadioCoche = document.querySelector('[name="formChasse"]:checked');
     const refMessage = document.getElementById('message'); 
